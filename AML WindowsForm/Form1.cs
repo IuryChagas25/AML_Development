@@ -87,7 +87,7 @@ namespace WindowsFormsApplication1
                     token.ThrowIfCancellationRequested();
                     var doc = CAEXDocument.New_CAEXDocument();
 
-                    // Exemplo de criação (igual ao anterior)
+                    // Exemplo de criação de um CAEXFile com dados fictícios
                     var sucLib1 = doc.CAEXFile.SystemUnitClassLib.Append();
                     sucLib1.Name = "MySUCLib";
                     var sucLib2 = doc.CAEXFile.SystemUnitClassLib.Append();

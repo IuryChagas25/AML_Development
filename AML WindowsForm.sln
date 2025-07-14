@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36202.13 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AML WindowsForm", "AML WindowsForm\AML WindowsForm.csproj", "{01CBAC0F-11C1-4CB4-84D7-74679CC89ADA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01CBAC0F-11C1-4CB4-84D7-74679CC89ADA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01CBAC0F-11C1-4CB4-84D7-74679CC89ADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01CBAC0F-11C1-4CB4-84D7-74679CC89ADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01CBAC0F-11C1-4CB4-84D7-74679CC89ADA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B62EC924-1C81-4E90-8DC4-C2EC308D385B}
+	EndGlobalSection
+EndGlobal

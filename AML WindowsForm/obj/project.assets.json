@@ -335,11 +335,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\iuryc\\source\\repos\\AML_Development\\AML WindowsForm\\AML WindowsForm.csproj",
+      "projectUniqueName": "C:\\Users\\iuryc\\Source\\Repos\\AML_Development\\AML WindowsForm\\AML WindowsForm.csproj",
       "projectName": "AML WindowsForm",
-      "projectPath": "C:\\Users\\iuryc\\source\\repos\\AML_Development\\AML WindowsForm\\AML WindowsForm.csproj",
+      "projectPath": "C:\\Users\\iuryc\\Source\\Repos\\AML_Development\\AML WindowsForm\\AML WindowsForm.csproj",
       "packagesPath": "C:\\Users\\iuryc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\iuryc\\source\\repos\\AML_Development\\AML WindowsForm\\obj\\",
+      "outputPath": "C:\\Users\\iuryc\\Source\\Repos\\AML_Development\\AML WindowsForm\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
