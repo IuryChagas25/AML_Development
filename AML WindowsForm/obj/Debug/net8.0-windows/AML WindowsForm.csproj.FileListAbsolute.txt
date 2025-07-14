@@ -23,3 +23,29 @@ C:\Users\iuryc\source\repos\AML WindowsForm\AML WindowsForm\bin\Debug\net8.0-win
 C:\Users\iuryc\source\repos\AML WindowsForm\AML WindowsForm\obj\Debug\net8.0-windows\AML WindowsForm.csproj.AssemblyReference.cache
 C:\Users\iuryc\source\repos\AML WindowsForm\AML WindowsForm\obj\Debug\net8.0-windows\AML Wind.4A7232D7.Up2Date
 C:\Users\iuryc\source\repos\AML WindowsForm\AML WindowsForm\obj\Debug\net8.0-windows\WindowsFormsApplication1.Form1.resources
+C:\Users\iuryc\source\repos\AML_Development\AML WindowsForm\bin\Debug\net8.0-windows\AML WindowsForm.exe
+C:\Users\iuryc\Source\Repos\AML_Development\AML WindowsForm\bin\Debug\net8.0-windows\AML WindowsForm.deps.json
+C:\Users\iuryc\Source\Repos\AML_Development\AML WindowsForm\bin\Debug\net8.0-windows\AML WindowsForm.runtimeconfig.json
+C:\Users\iuryc\source\repos\AML_Development\AML WindowsForm\bin\Debug\net8.0-windows\AML WindowsForm.dll
+C:\Users\iuryc\source\repos\AML_Development\AML WindowsForm\bin\Debug\net8.0-windows\AML WindowsForm.pdb
+C:\Users\iuryc\source\repos\AML_Development\AML WindowsForm\bin\Debug\net8.0-windows\Aml.Engine.dll
+C:\Users\iuryc\source\repos\AML_Development\AML WindowsForm\bin\Debug\net8.0-windows\Aml.Engine.Resources.dll
+C:\Users\iuryc\source\repos\AML_Development\AML WindowsForm\bin\Debug\net8.0-windows\System.IO.Packaging.dll
+C:\Users\iuryc\source\repos\AML_Development\AML WindowsForm\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\iuryc\source\repos\AML_Development\AML WindowsForm\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+C:\Users\iuryc\source\repos\AML_Development\AML WindowsForm\bin\Debug\net8.0-windows\System.Text.Json.dll
+C:\Users\iuryc\source\repos\AML_Development\AML WindowsForm\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\iuryc\source\repos\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\AML WindowsForm.csproj.AssemblyReference.cache
+C:\Users\iuryc\source\repos\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\WindowsFormsApplication1.Form1.resources
+C:\Users\iuryc\source\repos\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\AML WindowsForm.csproj.GenerateResource.cache
+C:\Users\iuryc\source\repos\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\AML WindowsForm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\iuryc\source\repos\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\AML WindowsForm.AssemblyInfoInputs.cache
+C:\Users\iuryc\source\repos\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\AML WindowsForm.AssemblyInfo.cs
+C:\Users\iuryc\source\repos\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\AML WindowsForm.csproj.CoreCompileInputs.cache
+C:\Users\iuryc\source\repos\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\AML WindowsForm.sourcelink.json
+C:\Users\iuryc\Source\Repos\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\AML Wind.4A7232D7.Up2Date
+C:\Users\iuryc\source\repos\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\AML WindowsForm.dll
+C:\Users\iuryc\source\repos\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\refint\AML WindowsForm.dll
+C:\Users\iuryc\source\repos\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\AML WindowsForm.pdb
+C:\Users\iuryc\Source\Repos\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\AML WindowsForm.genruntimeconfig.cache
+C:\Users\iuryc\Source\Repos\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\ref\AML WindowsForm.dll

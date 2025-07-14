@@ -70,122 +70,6 @@ namespace WindowsFormsApplication1
             }
         }
 
-        private async void Btn_CreateCAEX_Click(object sender, EventArgs e)
-        {
-            myErrorListBox.Items.Clear();
-            CAEXTreeView.Nodes.Clear();
-
-            _cancellationTokenSource?.Cancel();
-            _cancellationTokenSource = new CancellationTokenSource();
-            var token = _cancellationTokenSource.Token;
-
-            SetUiEnabled(false);
-            try
-            {
-                CAEXDocument newDoc = await Task.Run(() =>
-                {
-                    token.ThrowIfCancellationRequested();
-                    var doc = CAEXDocument.New_CAEXDocument();
-
-                    // Exemplo de criação de um CAEXFile com dados fictícios
-                    var sucLib1 = doc.CAEXFile.SystemUnitClassLib.Append();
-                    sucLib1.Name = "MySUCLib";
-                    var sucLib2 = doc.CAEXFile.SystemUnitClassLib.Append();
-                    sucLib2.Name = "MySUCLib1";
-                    var sucLib3 = doc.CAEXFile.SystemUnitClassLib.Append();
-                    sucLib3.Name = "MySUCLib2";
-
-                    var suc = sucLib1.SystemUnitClass.Append();
-                    suc.Name = "Class MyTank";
-                    var suc1 = sucLib1.SystemUnitClass.Append();
-                    suc1.Name = "Class MyLid";
-
-                    var sucIntElem1 = suc.InternalElement.Append();
-                    sucIntElem1.Name = "IE MyGround";
-                    var sucIntElem2 = suc1.CreateClassInstance();
-                    sucIntElem2.Name = "Instance of class MyLid";
-                    suc.InternalElement.Insert(sucIntElem2);
-
-                    var roleClassLib = doc.CAEXFile.RoleClassLib.Append();
-                    roleClassLib.Name = "MyRoleLib";
-                    var roleClass = roleClassLib.RoleClass.Append();
-                    roleClass.Name = "Role Lid";
-
-                    var insHierarchy = doc.CAEXFile.InstanceHierarchy.Append();
-                    insHierarchy.Name = "MyHierarchy";
-                    insHierarchy.ChangeMode = ChangeMode.Change;
-
-                    var intElem = insHierarchy.InternalElement.Append();
-                    intElem.Name = "IE";
-                    intElem.ID = "GUID1";
-                    intElem.Description = "Another description";
-                    var roleReq = intElem.RoleRequirements.Append();
-                    roleReq.RefBaseRoleClassPath = roleClass.GetFullNodePath();
-                    intElem.SetAttributeValue("Weight", "21");
-                    intElem.SetAttributeValue("Mass1", "11");
-
-                    var intElem2 = insHierarchy.InternalElement.Append();
-                    intElem2.Name = "IE2";
-                    var att2 = intElem2.Attribute.Append();
-                    att2.Name = "Color";
-                    att2.Value = "Yellow";
-                    att2.Remove();
-                    var intElem5 = intElem2.InternalElement.Append();
-                    intElem5.Name = "IE5";
-                    intElem5.Remove();
-
-                    var sourceDocInfo = doc.CAEXFile.SourceDocumentInformation.FirstOrDefault();
-                    if (sourceDocInfo != null)
-                    {
-                        sourceDocInfo.OriginName = "WriterName";
-                        sourceDocInfo.OriginID = "WriterID";
-                        sourceDocInfo.OriginVendor = "WriterVendor";
-                        sourceDocInfo.OriginVendorURL = "www.writervendor.com";
-                        sourceDocInfo.OriginVersion = "WriterVersion";
-                        sourceDocInfo.OriginRelease = "WriterRelease";
-                        sourceDocInfo.OriginProjectID = "WriterProjectID";
-                        sourceDocInfo.OriginProjectTitle = "WriterProjectTitle";
-                        sourceDocInfo.LastWritingDateTime = DateTime.Now;
-                    }
-
-                    var rev = intElem.New_Revision(DateTime.Now, "Peter Mustermann");
-                    if (rev != null)
-                    {
-                        rev.RevisionDate = DateTime.Now;
-                        rev.AuthorName = "Ender";
-                        rev.NewVersion = "1.2";
-                        rev.OldVersion = "1.1";
-                        rev.Comment = "A comment";
-                    }
-
-                    return doc;
-                }, token);
-
-                if (token.IsCancellationRequested)
-                    throw new OperationCanceledException();
-
-                _myDoc = newDoc;
-                lbl_FileName.Text = "Documento CAEX (exemplo)";
-
-                CAEXTreeView.Nodes.Clear();
-                ShowMyTree(CAEXTreeView, _myDoc);
-
-                MessageBox.Show("Documento CAEX de exemplo criado e exibido.", "Criar CAEX", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (OperationCanceledException)
-            {
-                myErrorListBox.Items.Add("Operação de criação cancelada.");
-            }
-            catch (Exception ex)
-            {
-                myErrorListBox.Items.Add($"Erro ao criar documento CAEX: {ex.Message}");
-                Debug.WriteLine(ex);
-            }
-            finally
-            {
-                SetUiEnabled(true);
-            }
-        }
 
         private async void Btn_SaveCAEX_Click(object sender, EventArgs e)
         {
@@ -272,41 +156,6 @@ namespace WindowsFormsApplication1
             }
         }
 
-        private void Btn_EtikettCAEXFile_Click(object sender, EventArgs e)
-        {
-            myErrorListBox.Items.Clear();
-            if (_myDoc == null)
-            {
-                MessageBox.Show("Nenhum documento carregado para etiquetar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            try
-            {
-                var sourceDocInfo = _myDoc.CAEXFile.SourceDocumentInformation.FirstOrDefault();
-                if (sourceDocInfo == null)
-                {
-                    myErrorListBox.Items.Add("SourceDocumentInformation não encontrado.");
-                    return;
-                }
-                sourceDocInfo.OriginName = "A source tool";
-                sourceDocInfo.OriginID = "A source tool";
-                sourceDocInfo.OriginVendor = "A company";
-                sourceDocInfo.OriginVendorURL = "www.acompany.com";
-                sourceDocInfo.OriginVersion = "1.0";
-                sourceDocInfo.OriginRelease = "1.0.1";
-                sourceDocInfo.LastWritingDateTime = DateTime.Today;
-                sourceDocInfo.OriginProjectTitle = "DemoProject";
-                sourceDocInfo.OriginProjectID = "DemoProject";
-
-                MessageBox.Show("SourceDocumentInformation atualizado.", "Etiquetar CAEX", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception ex)
-            {
-                myErrorListBox.Items.Add($"Erro ao etiquetar: {ex.Message}");
-                Debug.WriteLine(ex);
-            }
-        }
 
         #endregion
 
@@ -389,10 +238,10 @@ namespace WindowsFormsApplication1
         private void SetUiEnabled(bool enabled)
         {
             Btn_OpenCAEX.Enabled = enabled;
-            Btn_CreateCAEX.Enabled = enabled;
+            
             Btn_SaveCAEX.Enabled = enabled && _myDoc != null;
             Btn_ValidateCAEXFile.Enabled = enabled && _myDoc != null;
-            Btn_EtikettCAEXFile.Enabled = enabled && _myDoc != null;
+           
         }
 
         /// <summary>

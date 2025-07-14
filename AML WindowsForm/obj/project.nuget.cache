@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HSsEtzNbrbQ=",
+  "dgSpecHash": "XZV2jOlQ1DM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\iuryc\\Source\\Repos\\AML_Development\\AML WindowsForm\\AML WindowsForm.csproj",
+  "projectFilePath": "C:\\Users\\iuryc\\source\\repos\\AML_Development\\AML WindowsForm\\AML WindowsForm.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\iuryc\\.nuget\\packages\\aml.engine\\4.4.3\\aml.engine.4.4.3.nupkg.sha512",
     "C:\\Users\\iuryc\\.nuget\\packages\\aml.engine.resources\\4.1.3\\aml.engine.resources.4.1.3.nupkg.sha512",
