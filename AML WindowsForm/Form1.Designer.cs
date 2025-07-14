@@ -2,25 +2,18 @@
 {
     partial class Form1
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
-
-        // Controles do formulário
-        private System.Windows.Forms.Button Btn_OpenCAEX;
-        private System.Windows.Forms.Button Btn_CreateCAEX;
-        private System.Windows.Forms.Button Btn_SaveCAEX;
-        private System.Windows.Forms.Button Btn_ValidateCAEXFile;
-        private System.Windows.Forms.Button Btn_EtikettCAEXFile;
-        private System.Windows.Forms.TreeView CAEXTreeView;
-        private System.Windows.Forms.ListBox myErrorListBox;
-        private System.Windows.Forms.Label lbl_FileName;
-        private System.Windows.Forms.OpenFileDialog openFileDialog;
-        private System.Windows.Forms.SaveFileDialog saveFileDialog;
+        private Button Btn_OpenCAEX;
+        private Button Btn_SaveCAEX;
+        private Button Btn_ValidateCAEXFile;
+        private TreeView CAEXTreeView;
+        private ListBox myErrorListBox;
+        private Label lbl_FileName;
+        private OpenFileDialog openFileDialog;
+        private SaveFileDialog saveFileDialog;
 
         /// <summary>
-        /// Limpa os recursos que estão sendo usados.
+        /// Clean up any resources being used.
         /// </summary>
         protected override void Dispose(bool disposing)
         {
@@ -31,14 +24,15 @@
             base.Dispose(disposing);
         }
 
-        #region Código gerado pelo Windows Form Designer
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Método necessário para suporte ao Designer - não modifique 
-        /// o conteúdo deste método com o editor de código.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             Btn_OpenCAEX = new Button();
             Btn_SaveCAEX = new Button();
             Btn_ValidateCAEXFile = new Button();
@@ -48,6 +42,7 @@
             openFileDialog = new OpenFileDialog();
             saveFileDialog = new SaveFileDialog();
             SuspendLayout();
+
             // 
             // Btn_OpenCAEX
             // 
@@ -58,26 +53,29 @@
             Btn_OpenCAEX.Text = "Abrir CAEX";
             Btn_OpenCAEX.UseVisualStyleBackColor = true;
             Btn_OpenCAEX.Click += Btn_OpenCAEX_Click;
+
             // 
             // Btn_SaveCAEX
             // 
             Btn_SaveCAEX.Location = new Point(138, 12);
             Btn_SaveCAEX.Name = "Btn_SaveCAEX";
             Btn_SaveCAEX.Size = new Size(120, 30);
-            Btn_SaveCAEX.TabIndex = 2;
+            Btn_SaveCAEX.TabIndex = 1;
             Btn_SaveCAEX.Text = "Salvar CAEX";
             Btn_SaveCAEX.UseVisualStyleBackColor = true;
             Btn_SaveCAEX.Click += Btn_SaveCAEX_Click;
+
             // 
             // Btn_ValidateCAEXFile
             // 
             Btn_ValidateCAEXFile.Location = new Point(264, 12);
             Btn_ValidateCAEXFile.Name = "Btn_ValidateCAEXFile";
             Btn_ValidateCAEXFile.Size = new Size(120, 30);
-            Btn_ValidateCAEXFile.TabIndex = 3;
+            Btn_ValidateCAEXFile.TabIndex = 2;
             Btn_ValidateCAEXFile.Text = "Validar CAEX";
             Btn_ValidateCAEXFile.UseVisualStyleBackColor = true;
             Btn_ValidateCAEXFile.Click += Btn_ValidateCAEXFile_Click;
+
             // 
             // CAEXTreeView
             // 
@@ -85,7 +83,8 @@
             CAEXTreeView.Location = new Point(12, 60);
             CAEXTreeView.Name = "CAEXTreeView";
             CAEXTreeView.Size = new Size(400, 400);
-            CAEXTreeView.TabIndex = 5;
+            CAEXTreeView.TabIndex = 3;
+
             // 
             // myErrorListBox
             // 
@@ -95,7 +94,8 @@
             myErrorListBox.Location = new Point(418, 60);
             myErrorListBox.Name = "myErrorListBox";
             myErrorListBox.Size = new Size(400, 404);
-            myErrorListBox.TabIndex = 6;
+            myErrorListBox.TabIndex = 4;
+
             // 
             // lbl_FileName
             // 
@@ -104,8 +104,9 @@
             lbl_FileName.Location = new Point(12, 470);
             lbl_FileName.Name = "lbl_FileName";
             lbl_FileName.Size = new Size(191, 20);
-            lbl_FileName.TabIndex = 7;
+            lbl_FileName.TabIndex = 5;
             lbl_FileName.Text = "Nenhum arquivo carregado";
+
             // 
             // Form1
             // 

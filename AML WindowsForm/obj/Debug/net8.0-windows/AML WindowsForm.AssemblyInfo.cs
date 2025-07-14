@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AML WindowsForm")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f364596b4e52836022cce9dd34b95898dc8c5ed0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+27f7e680a78f7537bebf05fafa9f1da035ffde95")]
 [assembly: System.Reflection.AssemblyProductAttribute("AML WindowsForm")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AML WindowsForm")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
