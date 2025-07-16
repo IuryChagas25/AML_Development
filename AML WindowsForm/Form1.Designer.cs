@@ -118,7 +118,7 @@
             Controls.Add(Btn_SaveCAEX);
             Controls.Add(Btn_OpenCAEX);
             Name = "Form1";
-            Text = "AML Demonstrator";
+            Text = "AML Check";
             ResumeLayout(false);
             PerformLayout();
         }

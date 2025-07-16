@@ -203,6 +203,8 @@ namespace WindowsFormsApplication1
             }
         }
 
+
+        #region Funções Assincronas para salvar e validar
         private async void Btn_SaveCAEX_Click(object sender, EventArgs e)
         {
             myErrorListBox.Items.Clear();
@@ -392,3 +394,4 @@ namespace WindowsFormsApplication1
         #endregion
     }
 }
+#endregion
