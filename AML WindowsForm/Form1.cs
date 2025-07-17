@@ -39,6 +39,7 @@ namespace WindowsFormsApplication1
             saveFileDialog.Title = "Salvar arquivo AML/CAEX";
         }
 
+        // Função responsável por configurar o menu de contexto para edição
         private void ConfigureContextMenu()
         {
             treeContextMenu = new ContextMenuStrip();
@@ -64,7 +65,7 @@ namespace WindowsFormsApplication1
             if (node == null)
                 return;
 
-            // Editar Atributo
+            // Editar o atributo que foi selecionado pelo usuário
             if (node.Tag is AttributeType attr)
             {
                 string atual = attr.Value ?? string.Empty;
@@ -80,7 +81,7 @@ namespace WindowsFormsApplication1
                     node.Text = $"{attr.Name}: {novo} ({attr.AttributeDataType}){unit}";
                 }
             }
-            // Editar Nome de InternalElement
+            // Editar o nome
             else if (node.Tag is InternalElementType ie)
             {
                 string novoNome = Interaction.InputBox(
@@ -93,7 +94,7 @@ namespace WindowsFormsApplication1
                     node.Text = novoNome;
                 }
             }
-            // Outros tipos podem ser adicionados aqui
+            
         }
 
         private Task<(bool IsValid, string[] ErrorMessages)> ValidateCAEXAsync(CAEXDocument doc, CancellationToken token)
