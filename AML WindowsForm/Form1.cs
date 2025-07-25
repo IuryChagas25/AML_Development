@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Aml.Engine.AmlObjects;
 using Aml.Engine.CAEX;
+
 using Aml.Engine.CAEX.Extensions;
 using Aml.Engine.Services;
 using Aml.Engine.Xml.Extensions;
@@ -82,19 +83,66 @@ namespace WindowsFormsApplication1
                 }
             }
             // Editar o nome
-            else if (node.Tag is InternalElementType ie)
+            else if (node.Tag is InstanceHierarchyType ih)
             {
-                string novoNome = Interaction.InputBox(
-                    "Nome atual do elemento:",
-                    "Editar Elemento",
-                    ie.Name);
-                if (!string.IsNullOrWhiteSpace(novoNome))
+                string atual = ih.Name;
+                string novo = Interaction.InputBox(
+                    $"Nome atual da Instância de Hierarquia:",
+                    "Editar InstanceHierarchy",
+                    atual);
+
+                if (!string.IsNullOrWhiteSpace(novo) && novo != atual)
                 {
-                    ie.Name = novoNome;
-                    node.Text = novoNome;
+                    ih.Name = novo;
+                    node.Text = novo;
                 }
             }
-            
+            // --- editar InternalElement ---
+            else if (node.Tag is InternalElementType ie)
+            {
+                string atual = ie.Name;
+                string novo = Interaction.InputBox(
+                    $"Nome atual do InternalElement:",
+                    "Editar InternalElement",
+                    atual);
+
+                if (!string.IsNullOrWhiteSpace(novo) && novo != atual)
+                {
+                    ie.Name = novo;
+                    node.Text = novo;
+                }
+            }
+            // --- editar RoleClass (families) ---
+            else if (node.Tag is RoleFamilyType rf)
+            {
+                string atual = rf.Name;
+                string novo = Interaction.InputBox(
+                    $"Nome atual do RoleClass:",
+                    "Editar RoleFamily",
+                    atual);
+
+                if (!string.IsNullOrWhiteSpace(novo) && novo != atual)
+                {
+                    rf.Name = novo;
+                    node.Text = novo;
+                }
+            }
+            // --- editar SystemUnitClass (families) ---
+            else if (node.Tag is SystemUnitFamilyType su)
+            {
+                string atual = su.Name;
+                string novo = Interaction.InputBox(
+                    $"Nome atual do SystemUnitClass:",
+                    "Editar SystemUnitFamily",
+                    atual);
+
+                if (!string.IsNullOrWhiteSpace(novo) && novo != atual)
+                {
+                    su.Name = novo;
+                    node.Text = novo;
+                }
+            }
+
         }
 
         private Task<(bool IsValid, string[] ErrorMessages)> ValidateCAEXAsync(CAEXDocument doc, CancellationToken token)
