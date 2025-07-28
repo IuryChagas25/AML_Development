@@ -49,3 +49,4 @@ C:\Users\iuryc\source\repos\AML_Development\AML WindowsForm\obj\Debug\net8.0-win
 C:\Users\iuryc\source\repos\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\AML WindowsForm.pdb
 C:\Users\iuryc\Source\Repos\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\AML WindowsForm.genruntimeconfig.cache
 C:\Users\iuryc\Source\Repos\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\ref\AML WindowsForm.dll
+C:\Users\iuryc\source\repos\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\AML_WindowsForm.Properties.Resources.resources

@@ -3,18 +3,17 @@
     partial class Form1
     {
         private System.ComponentModel.IContainer components = null;
-        private Button Btn_OpenCAEX;
-        private Button Btn_SaveCAEX;
-        private Button Btn_ValidateCAEXFile;
-        private TreeView CAEXTreeView;
-        private ListBox myErrorListBox;
-        private Label lbl_FileName;
-        private OpenFileDialog openFileDialog;
-        private SaveFileDialog saveFileDialog;
+        private System.Windows.Forms.Button Btn_OpenCAEX;
+        private System.Windows.Forms.Button Btn_SaveCAEX;
+        private System.Windows.Forms.Button Btn_ValidateCAEXFile;
+        private System.Windows.Forms.TreeView CAEXTreeView;
+        private System.Windows.Forms.ListBox myErrorListBox;
+        private System.Windows.Forms.Label lbl_FileName;
+        private System.Windows.Forms.ContextMenuStrip treeContextMenu;
+        private System.Windows.Forms.ToolStripMenuItem editMenuItem;
+        private System.Windows.Forms.OpenFileDialog openFileDialog;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -24,105 +23,126 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            Btn_OpenCAEX = new Button();
-            Btn_SaveCAEX = new Button();
-            Btn_ValidateCAEXFile = new Button();
-            CAEXTreeView = new TreeView();
-            myErrorListBox = new ListBox();
-            lbl_FileName = new Label();
-            openFileDialog = new OpenFileDialog();
-            saveFileDialog = new SaveFileDialog();
-            SuspendLayout();
+            this.components = new System.ComponentModel.Container();
+            this.Btn_OpenCAEX = new System.Windows.Forms.Button();
+            this.Btn_SaveCAEX = new System.Windows.Forms.Button();
+            this.Btn_ValidateCAEXFile = new System.Windows.Forms.Button();
+            this.CAEXTreeView = new System.Windows.Forms.TreeView();
+            this.myErrorListBox = new System.Windows.Forms.ListBox();
+            this.lbl_FileName = new System.Windows.Forms.Label();
+            this.treeContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.editMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.SuspendLayout();
 
             // 
             // Btn_OpenCAEX
             // 
-            Btn_OpenCAEX.Location = new Point(12, 12);
-            Btn_OpenCAEX.Name = "Btn_OpenCAEX";
-            Btn_OpenCAEX.Size = new Size(120, 30);
-            Btn_OpenCAEX.TabIndex = 0;
-            Btn_OpenCAEX.Text = "Abrir CAEX";
-            Btn_OpenCAEX.UseVisualStyleBackColor = true;
-            Btn_OpenCAEX.Click += Btn_OpenCAEX_Click;
+            this.Btn_OpenCAEX.Location = new System.Drawing.Point(12, 12);
+            this.Btn_OpenCAEX.Name = "Btn_OpenCAEX";
+            this.Btn_OpenCAEX.Size = new System.Drawing.Size(120, 30);
+            this.Btn_OpenCAEX.TabIndex = 0;
+            this.Btn_OpenCAEX.Text = "Abrir CAEX";
+            this.Btn_OpenCAEX.UseVisualStyleBackColor = true;
+            this.Btn_OpenCAEX.Click += new System.EventHandler(this.Btn_OpenCAEX_Click);
 
             // 
             // Btn_SaveCAEX
             // 
-            Btn_SaveCAEX.Location = new Point(138, 12);
-            Btn_SaveCAEX.Name = "Btn_SaveCAEX";
-            Btn_SaveCAEX.Size = new Size(120, 30);
-            Btn_SaveCAEX.TabIndex = 1;
-            Btn_SaveCAEX.Text = "Salvar CAEX";
-            Btn_SaveCAEX.UseVisualStyleBackColor = true;
-            Btn_SaveCAEX.Click += Btn_SaveCAEX_Click;
+            this.Btn_SaveCAEX.Location = new System.Drawing.Point(138, 12);
+            this.Btn_SaveCAEX.Name = "Btn_SaveCAEX";
+            this.Btn_SaveCAEX.Size = new System.Drawing.Size(120, 30);
+            this.Btn_SaveCAEX.TabIndex = 1;
+            this.Btn_SaveCAEX.Text = "Salvar CAEX";
+            this.Btn_SaveCAEX.UseVisualStyleBackColor = true;
+            this.Btn_SaveCAEX.Click += new System.EventHandler(this.Btn_SaveCAEX_Click);
 
             // 
             // Btn_ValidateCAEXFile
             // 
-            Btn_ValidateCAEXFile.Location = new Point(264, 12);
-            Btn_ValidateCAEXFile.Name = "Btn_ValidateCAEXFile";
-            Btn_ValidateCAEXFile.Size = new Size(120, 30);
-            Btn_ValidateCAEXFile.TabIndex = 2;
-            Btn_ValidateCAEXFile.Text = "Validar CAEX";
-            Btn_ValidateCAEXFile.UseVisualStyleBackColor = true;
-            Btn_ValidateCAEXFile.Click += Btn_ValidateCAEXFile_Click;
+            this.Btn_ValidateCAEXFile.Location = new System.Drawing.Point(264, 12);
+            this.Btn_ValidateCAEXFile.Name = "Btn_ValidateCAEXFile";
+            this.Btn_ValidateCAEXFile.Size = new System.Drawing.Size(120, 30);
+            this.Btn_ValidateCAEXFile.TabIndex = 2;
+            this.Btn_ValidateCAEXFile.Text = "Validar CAEX";
+            this.Btn_ValidateCAEXFile.UseVisualStyleBackColor = true;
+            this.Btn_ValidateCAEXFile.Click += new System.EventHandler(this.Btn_ValidateCAEXFile_Click);
 
             // 
             // CAEXTreeView
             // 
-            CAEXTreeView.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            CAEXTreeView.Location = new Point(12, 60);
-            CAEXTreeView.Name = "CAEXTreeView";
-            CAEXTreeView.Size = new Size(400, 400);
-            CAEXTreeView.TabIndex = 3;
+            this.CAEXTreeView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                | System.Windows.Forms.AnchorStyles.Left)));
+            this.CAEXTreeView.Location = new System.Drawing.Point(12, 60);
+            this.CAEXTreeView.Name = "CAEXTreeView";
+            this.CAEXTreeView.Size = new System.Drawing.Size(400, 400);
+            this.CAEXTreeView.TabIndex = 3;
+            this.CAEXTreeView.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.CAEXTreeView_NodeMouseClick);
 
             // 
             // myErrorListBox
             // 
-            myErrorListBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            myErrorListBox.FormattingEnabled = true;
-            myErrorListBox.HorizontalScrollbar = true;
-            myErrorListBox.Location = new Point(418, 60);
-            myErrorListBox.Name = "myErrorListBox";
-            myErrorListBox.Size = new Size(400, 404);
-            myErrorListBox.TabIndex = 4;
+            this.myErrorListBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                | System.Windows.Forms.AnchorStyles.Left)
+                | System.Windows.Forms.AnchorStyles.Right)));
+            this.myErrorListBox.FormattingEnabled = true;
+            this.myErrorListBox.HorizontalScrollbar = true;
+            this.myErrorListBox.ItemHeight = 15;
+            this.myErrorListBox.Location = new System.Drawing.Point(418, 60);
+            this.myErrorListBox.Name = "myErrorListBox";
+            this.myErrorListBox.Size = new System.Drawing.Size(411, 404);
+            this.myErrorListBox.TabIndex = 4;
 
             // 
             // lbl_FileName
             // 
-            lbl_FileName.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            lbl_FileName.AutoSize = true;
-            lbl_FileName.Location = new Point(12, 470);
-            lbl_FileName.Name = "lbl_FileName";
-            lbl_FileName.Size = new Size(191, 20);
-            lbl_FileName.TabIndex = 5;
-            lbl_FileName.Text = "Nenhum arquivo carregado";
+            this.lbl_FileName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lbl_FileName.AutoSize = true;
+            this.lbl_FileName.Location = new System.Drawing.Point(12, 470);
+            this.lbl_FileName.Name = "lbl_FileName";
+            this.lbl_FileName.Size = new System.Drawing.Size(191, 15);
+            this.lbl_FileName.TabIndex = 5;
+            this.lbl_FileName.Text = "Nenhum arquivo carregado";
+
+            // treeContextMenu
+           
+            this.treeContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.editMenuItem});
+            this.treeContextMenu.Name = "treeContextMenu";
+            this.treeContextMenu.Size = new System.Drawing.Size(107, 26);
+                      // 
+                       // editMenuItem
+                       // 
+            this.editMenuItem.Name = "editMenuItem";
+            this.editMenuItem.Size = new System.Drawing.Size(106, 22);
+            this.editMenuItem.Text = "Editar";
+            this.editMenuItem.Click += new System.EventHandler(this.EditMenuItem_Click);
+
+            // associar no TreeView
+            this.CAEXTreeView.ContextMenuStrip = this.treeContextMenu;
+            // usar duplo clique para editar
+            this.CAEXTreeView.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.CAEXTreeView_NodeMouseDoubleClick);
 
             // 
             // Form1
             // 
-            ClientSize = new Size(830, 500);
-            Controls.Add(lbl_FileName);
-            Controls.Add(myErrorListBox);
-            Controls.Add(CAEXTreeView);
-            Controls.Add(Btn_ValidateCAEXFile);
-            Controls.Add(Btn_SaveCAEX);
-            Controls.Add(Btn_OpenCAEX);
-            Name = "Form1";
-            Text = "AML Check";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(841, 500);
+            this.Controls.Add(this.lbl_FileName);
+            this.Controls.Add(this.myErrorListBox);
+            this.Controls.Add(this.CAEXTreeView);
+            this.Controls.Add(this.Btn_ValidateCAEXFile);
+            this.Controls.Add(this.Btn_SaveCAEX);
+            this.Controls.Add(this.Btn_OpenCAEX);
+            this.Name = "Form1";
+            this.Text = "AML Check";
+            this.treeContextMenu.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
         }
-
-        #endregion
     }
 }
