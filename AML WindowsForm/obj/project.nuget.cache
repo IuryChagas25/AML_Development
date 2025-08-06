@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "3TFWEU1Ok5Q=",
+  "dgSpecHash": "E8XX6pJOQjg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\iuryc\\source\\repos\\AML_Development\\AML WindowsForm\\AML WindowsForm.csproj",
+  "projectFilePath": "F:\\LIEC\\aml\\AML_Development\\AML WindowsForm\\AML WindowsForm.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\iuryc\\.nuget\\packages\\aml.engine\\4.4.3\\aml.engine.4.4.3.nupkg.sha512",
-    "C:\\Users\\iuryc\\.nuget\\packages\\aml.engine.resources\\4.1.3\\aml.engine.resources.4.1.3.nupkg.sha512",
-    "C:\\Users\\iuryc\\.nuget\\packages\\system.io.packaging\\9.0.2\\system.io.packaging.9.0.2.nupkg.sha512",
-    "C:\\Users\\iuryc\\.nuget\\packages\\system.io.pipelines\\9.0.2\\system.io.pipelines.9.0.2.nupkg.sha512",
-    "C:\\Users\\iuryc\\.nuget\\packages\\system.text.encodings.web\\9.0.2\\system.text.encodings.web.9.0.2.nupkg.sha512",
-    "C:\\Users\\iuryc\\.nuget\\packages\\system.text.json\\9.0.2\\system.text.json.9.0.2.nupkg.sha512"
+    "C:\\Users\\Felipe Cardoso\\.nuget\\packages\\aml.engine\\4.4.3\\aml.engine.4.4.3.nupkg.sha512",
+    "C:\\Users\\Felipe Cardoso\\.nuget\\packages\\aml.engine.resources\\4.1.3\\aml.engine.resources.4.1.3.nupkg.sha512",
+    "C:\\Users\\Felipe Cardoso\\.nuget\\packages\\system.io.packaging\\9.0.2\\system.io.packaging.9.0.2.nupkg.sha512",
+    "C:\\Users\\Felipe Cardoso\\.nuget\\packages\\system.io.pipelines\\9.0.2\\system.io.pipelines.9.0.2.nupkg.sha512",
+    "C:\\Users\\Felipe Cardoso\\.nuget\\packages\\system.text.encodings.web\\9.0.2\\system.text.encodings.web.9.0.2.nupkg.sha512",
+    "C:\\Users\\Felipe Cardoso\\.nuget\\packages\\system.text.json\\9.0.2\\system.text.json.9.0.2.nupkg.sha512"
   ],
   "logs": []
 }

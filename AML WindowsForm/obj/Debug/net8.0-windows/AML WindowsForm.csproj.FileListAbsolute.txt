@@ -50,3 +50,30 @@ C:\Users\iuryc\source\repos\AML_Development\AML WindowsForm\obj\Debug\net8.0-win
 C:\Users\iuryc\Source\Repos\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\AML WindowsForm.genruntimeconfig.cache
 C:\Users\iuryc\Source\Repos\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\ref\AML WindowsForm.dll
 C:\Users\iuryc\source\repos\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\AML_WindowsForm.Properties.Resources.resources
+F:\LIEC\aml\AML_Development\AML WindowsForm\bin\Debug\net8.0-windows\AML WindowsForm.exe
+F:\LIEC\aml\AML_Development\AML WindowsForm\bin\Debug\net8.0-windows\AML WindowsForm.deps.json
+F:\LIEC\aml\AML_Development\AML WindowsForm\bin\Debug\net8.0-windows\AML WindowsForm.runtimeconfig.json
+F:\LIEC\aml\AML_Development\AML WindowsForm\bin\Debug\net8.0-windows\AML WindowsForm.dll
+F:\LIEC\aml\AML_Development\AML WindowsForm\bin\Debug\net8.0-windows\AML WindowsForm.pdb
+F:\LIEC\aml\AML_Development\AML WindowsForm\bin\Debug\net8.0-windows\Aml.Engine.dll
+F:\LIEC\aml\AML_Development\AML WindowsForm\bin\Debug\net8.0-windows\Aml.Engine.Resources.dll
+F:\LIEC\aml\AML_Development\AML WindowsForm\bin\Debug\net8.0-windows\System.IO.Packaging.dll
+F:\LIEC\aml\AML_Development\AML WindowsForm\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+F:\LIEC\aml\AML_Development\AML WindowsForm\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+F:\LIEC\aml\AML_Development\AML WindowsForm\bin\Debug\net8.0-windows\System.Text.Json.dll
+F:\LIEC\aml\AML_Development\AML WindowsForm\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+F:\LIEC\aml\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\AML WindowsForm.csproj.AssemblyReference.cache
+F:\LIEC\aml\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\WindowsFormsApplication1.Form1.resources
+F:\LIEC\aml\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\AML_WindowsForm.Properties.Resources.resources
+F:\LIEC\aml\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\AML WindowsForm.csproj.GenerateResource.cache
+F:\LIEC\aml\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\AML WindowsForm.GeneratedMSBuildEditorConfig.editorconfig
+F:\LIEC\aml\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\AML WindowsForm.AssemblyInfoInputs.cache
+F:\LIEC\aml\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\AML WindowsForm.AssemblyInfo.cs
+F:\LIEC\aml\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\AML WindowsForm.csproj.CoreCompileInputs.cache
+F:\LIEC\aml\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\AML WindowsForm.sourcelink.json
+F:\LIEC\aml\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\AML Wind.4A7232D7.Up2Date
+F:\LIEC\aml\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\AML WindowsForm.dll
+F:\LIEC\aml\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\refint\AML WindowsForm.dll
+F:\LIEC\aml\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\AML WindowsForm.pdb
+F:\LIEC\aml\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\AML WindowsForm.genruntimeconfig.cache
+F:\LIEC\aml\AML_Development\AML WindowsForm\obj\Debug\net8.0-windows\ref\AML WindowsForm.dll
